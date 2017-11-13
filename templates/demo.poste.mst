@@ -1,0 +1,105 @@
+{{#features}}
+<li class="item" style="width:238px;">
+    <h1 class="title-feature">{{nom}}</h3>
+    <p style="font-family:'roboto_bold'"> Activité : {{activite}}</p>
+    {{#horaires}}
+        <p style="font-family:'roboto_bold'"> Ouverture : {{horaires}}</p>
+    {{/horaires}}    
+    <p style="font-family:'roboto_bold'"> Adresse : {{num_rue}} {{rue}} {{ext_rue}} - {{ville}}</p>
+    {{#ville}}
+    <p style="font-family:'roboto_bold'"> Ville : {{ville}}</p>
+    {{/ville}}
+    {{#tel}}
+        <p style="font-family:'roboto_bold'"> Téléphone : {{tel}}</p>
+    {{/tel}}  
+    </br>
+    {{#image}}
+    </br>
+    <img src="{{image}}" class="img-responsive" />
+    {{/image}}     
+    <p style="font-family:'roboto_bold'"> Localisation : {{locx}}, {{locy}}</p>
+    <p class="text-feature">
+        <span style="font-family:'roboto_bold'">            
+        {{#url}}
+        </br>
+        <div class="but_link">
+        <p><a href="{{url}}" target="_blank">
+            <span class="glyphicon glyphicon-file" aria-hidden="true">
+            </span> Accéder </a></p></div>
+        {{/url}}                        
+    </p
+</li>
+{{/features}}
+
+<style>
+    .img-responsive{
+        border:1px solid #cecece;
+    }
+    .title-feature {
+        color: rgb(0,82,158);
+        font-family: "roboto_bold";
+        font-size: 16px;
+        margin-bottom: 1%;
+        line-height: 1;
+    }
+    .subtitle-feature {
+        color: rgb(0,82,158);
+        font-family: "roboto_bold";
+        font-size: 14px;
+        margin-top: 7%;
+        line-height: 1;
+    }
+    .text-feature {
+        font-family: "roboto_regular";
+        color: #555;
+        font-size: 13px;
+        margin-top: 10%;
+    }
+    .info.N {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .info.O {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .but_link {
+        padding: 5px 0 5px 0;
+        font-size: 14px;
+        font-family: "roboto_bold";
+        background: rgb(0,82,158);
+        width: 150px;
+        border: 1px solid rgb(0,82,158);
+        margin-left: 10%;
+    }
+    .but_link:hover {
+        background: rgb(254,213,0);
+        border: rgb(254,213,0);
+    } 
+    
+    .but_link:hover a {
+        color:rgb(0,82,158);
+    }    
+    .but_link p {
+        margin: 0;
+        text-align: center;
+        /*color: #fed500;*/
+        color: #FEE700;
+        
+    }
+    .but_link a {
+        color: #FEE700;;
+    }
+    .but_link a:hover {
+        color: rgb(0,82,158);
+    }
+    .but_link a:focus {
+        color: rgb(0,82,158);
+    }
+</style>
