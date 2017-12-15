@@ -36,6 +36,17 @@ a:hover{
     background: url(../img/grid.png) repeat scroll center top #fff;
 }
 
+
+/******************************************************************************
+--------------------------- ROCKETCHAT OVERRIDE -------------------------
+********************************************************************************/
+.rocketchat-widget{
+    width:270px !important;
+    margin-right: 5%;
+}
+
+
+
 /*******************************
 ------------- OPENLAYERS 3 CSS OVERRIDE
 ********************************/
@@ -444,6 +455,38 @@ ul#basemapslist  li{
 
 div#backgroundlayerstoolbar-gallery {
   /*display: inline-flex;*/
+}
+
+/*******************************
+-------------referential LAYER
+********************************/
+#referential-layer-box {
+    background-color:white;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    margin-top: 60px;
+    margin-left: 7px;
+    max-width: 300px; 
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#referential-layer-box {
+  height: 35px;
+  min-width: 35px;
+}
+
+#referential-layer-box-header span {
+  color: #fff;
+  padding: 10px;
+}
+
+#referential-layer-box .active {
+    min-width: 280px;
 }
 
 /*******************************
@@ -1576,4 +1619,3 @@ button.btn.btn-default.btn-raised, a#exportpng,a.btn.btn-default {
     padding-left: 30%;
     padding-top: 10px;
 }
-

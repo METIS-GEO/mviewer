@@ -398,16 +398,23 @@ ul#searchparameters{
 
 /* Search toolbar */
 
-#searchresults li.list-group-item.disabled {
-	background-color: #F62459;
-	border-color: #F62459;
+li.geoportail.list-group-item.disabled{
+	background-color:#F62459;
+	border-color:#F62459;
 	color: white!important;
 	font-family: 'roboto_bold', Arial, Sans-serif!important;
 }
 
-#searchresults li a:hover {
+li.elasticsearch.list-group-item.disabled{
+	background-color:#F62459!important;
+	border-color:#F62459;
+	color: white!important;
 	font-family: 'roboto_bold', Arial, Sans-serif!important;
-	color: #F62459!important;
+}
+
+#searchresults li a:hover{
+	font-family:'roboto_bold', Arial, Sans-serif!important;
+	color:#F62459!important;
 }
 
 .popup-content .nav-tabs .active .glyphicon, .popup-content .nav-tabs .active .fa {
