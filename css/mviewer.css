@@ -1,6 +1,9 @@
 /******************************************************************************
 --------------------------- CSS MVIEWER BASIQUE -------------------------
 ********************************************************************************/
+@media .navbar-form{
+	min-width: 0px;
+}
      
 html, body {
 	width: 100%;
@@ -33,18 +36,24 @@ a:hover{
 	width: 100%;
 	height: 100%;
 	z-index: 0;
-    background: url(../img/grid.png) repeat scroll center top #fff;
+	background: url(../img/grid.png) repeat scroll center top #fff;
 }
 
-
-/******************************************************************************
---------------------------- ROCKETCHAT OVERRIDE -------------------------
-********************************************************************************/
-.rocketchat-widget{
-    width:270px !important;
-    margin-right: 5%;
+#mouse-position{
+    width: auto;
+    position: fixed;    
+    right: 6%;
+    height: 15px;
+    bottom: 11px;
+    color: #777;    
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    font-size: 10px; 
+    font-family: 'roboto_regular', Arial, Sans-serif;
+    outline: rgba(255,255,255,0.7) solid 3px;
+    border: rgba(119,119,119,0.8) solid 1px;
+    border-top-color: rgba(119,119,119,0);
 }
-
 
 
 /*******************************
@@ -56,7 +65,7 @@ a:hover{
     background-color: rgba(255,255,255,0.7);
     border-top-left-radius: 4px;
     right: auto;
-    margin-left: 145px;
+    margin-left: 170px;
 }
 
 .ol-attribution a {
@@ -455,38 +464,6 @@ ul#basemapslist  li{
 
 div#backgroundlayerstoolbar-gallery {
   /*display: inline-flex;*/
-}
-
-/*******************************
--------------referential LAYER
-********************************/
-#referential-layer-box {
-    background-color:white;
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 100%;
-    margin-top: 60px;
-    margin-left: 7px;
-    max-width: 300px; 
-     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#referential-layer-box {
-  height: 35px;
-  min-width: 35px;
-}
-
-#referential-layer-box-header span {
-  color: #fff;
-  padding: 10px;
-}
-
-#referential-layer-box .active {
-    min-width: 280px;
 }
 
 /*******************************
@@ -1619,3 +1596,4 @@ button.btn.btn-default.btn-raised, a#exportpng,a.btn.btn-default {
     padding-left: 30%;
     padding-top: 10px;
 }
+
