@@ -1,0 +1,83 @@
+{{#features}}
+    <li class="item" style="width:238px;">
+        <h3 class="title-feature">Nature : {{code_ch1}} - {{ref_chambr}}</h3>
+        {{#image}}
+            <img src="{{image}}" class="img-responsive" style="margin-top:5%;" />
+        {{/image}}
+        
+
+        <p class="text-feature">    
+            <span style="font-family:'roboto_bold'"> ID de la coordination :</span> {{id_coord}}<br/>    
+            <span style="font-family:'roboto_bold'"> Implantation :</span> {{implant}}<br/>
+            <span style="font-family:'roboto_bold'"> Clé MKT2 :</span> {{cle_mkt2}}<br/>
+            <span style="font-family:'roboto_bold'"> Code commune :</span> {{code_com}}<br/> 
+
+            <div class="but_link">
+            <p><a href="/pintatlas/{{url}}" target="_blank">
+                <span class="glyphicon glyphicon-file" aria-hidden="true">
+                </span> Télécharger </a></p></div>         
+       </p>
+    </li>
+{{/features}}
+
+<style>
+    .img-responsive{
+        border:1px solid #cecece;
+
+    .title-feature {
+        color: #000000;
+        font-family:"roboto_bold";
+        font-size:23px;
+        margin-bottom:1%;
+        line-height:1;
+    }
+    .subtitle-feature {
+        color: #000000;
+        font-family:"roboto_bold";
+        font-size:18px;
+        margin-top:7%;
+        line-height:1;
+    }
+    .text-feature{
+        font-family:"roboto_regular";
+        color:#555;
+        font-size:13px;
+        margin-top:10%;
+    }   
+
+    .info.N {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .info.O {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .but_link {
+        padding: 5px 0 5px 0;
+        font-size: 14px;
+        font-family: "roboto_bold";
+        background: #2E5367;
+        width: 150px;
+        border: 1px solid rgb(0,82,158);
+        margin-left: 10%;
+    }
+   
+    .but_link p {
+        margin: 0;
+        text-align: center;
+        /*color: #fed500;*/
+        color: #FFFFFF;
+        
+    }
+    .but_link a {
+        color: #FFFFFF;
+    }
+</style>
+

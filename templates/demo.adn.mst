@@ -9,7 +9,7 @@
         <span style="font-family:'roboto_bold'">            
         
         <div class="but_link">
-        <p><a href="{{url}}" target="_blank">
+        <p><a href="/pintatlas/{{url}}" target="_blank">
             <span class="glyphicon glyphicon-file" aria-hidden="true">
             </span> Télécharger </a></p></div>                                
     </p>

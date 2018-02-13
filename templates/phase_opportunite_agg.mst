@@ -1,0 +1,100 @@
+{{#features}}
+    <li class="item" style="width:238px;">
+        <h3 class="title-feature">{{id_opp}}</h3>
+        {{#image}}
+            <img src="{{image}}" class="img-responsive" style="margin-top:5%;" />
+        {{/image}}
+        
+
+        <p class="text-feature">    
+            <span style="font-family:'roboto_bold'"> Nom de la coordination :</span> {{nom}}<br/>
+		    <span style="font-family:'roboto_bold'"> Emprise de la coordination :</span> {{emprise}}<br/>
+		    <span style="font-family:'roboto_bold'"> Type de travaux :</span> {{travaux}}<br/>
+		    <span style="font-family:'roboto_bold'"> Lot :</span> {{cdd}} - lot {{lot}}<br/>	
+		    <span style="font-family:'roboto_bold'"> Programmation :</span> {{id_prog}} - {{prog_dsp}}<br/>		
+			<span style="font-family:'roboto_bold'"> ID NRO :</span> {{id_nro}}<br/>
+			<span style="font-family:'roboto_bold'"> ID réseau :</span> {{id_reseau}}<br/>
+			<span style="font-family:'roboto_bold'"> Commune de départ:</span> {{com_dep}} - {{insee}}<br/>
+			<span style="font-family:'roboto_bold'"> Support :</span> {{support}}<br/>
+			<span style="font-family:'roboto_bold'"> Type de réseau :</span> {{typ_reseau}}<br/>		
+			<span style="font-family:'roboto_bold'"> Type de cables :</span> {{typ_cable}}<br/>
+			<span style="font-family:'roboto_bold'"> Fibres :</span> {{fibres}}<br/>
+			<span style="font-family:'roboto_bold'"> Prévision Starr :</span> {{prev_starr}}<br/>
+			<span style="font-family:'roboto_bold'"> Longueur de la prévision Starr :</span> {{lg_prev_st}}<br/>
+			<span style="font-family:'roboto_bold'"> Type de GC mutualisé :</span> {{gc_typ_mut}}<br/>
+			<span style="font-family:'roboto_bold'"> Type de GC d'interconnexion :</span> {{gc_typ_int}}<br/>
+			<span style="font-family:'roboto_bold'"> Longueur :</span> {{longueur}} m<br/>
+			<span style="font-family:'roboto_bold'"> Début des travaux :</span> {{debut_trvx}}<br/>
+			<span style="font-family:'roboto_bold'"> MOA :</span> {{moa}}<br/>
+			<span style="font-family:'roboto_bold'"> Statut :</span> {{statut}}<br/>
+			<span style="font-family:'roboto_bold'"> Commentaire :</span> {{commentair}}<br/>
+
+            <div class="but_link">
+            <p><a href="/pintatlas/{{url}}" target="_blank">
+                <span class="glyphicon glyphicon-file" aria-hidden="true">
+                </span> Télécharger (à venir)</a></p></div>         
+       </p>
+    </li>
+{{/features}}
+
+<style>
+    .img-responsive{
+        border:1px solid #cecece;
+
+    .title-feature {
+        color: #000000;
+        font-family:"roboto_bold";
+        font-size:23px;
+        margin-bottom:1%;
+        line-height:1;
+    }
+    .subtitle-feature {
+        color: #000000;
+        font-family:"roboto_bold";
+        font-size:18px;
+        margin-top:7%;
+        line-height:1;
+    }
+    .text-feature{
+        font-family:"roboto_regular";
+        color:#555;
+        font-size:13px;
+        margin-top:10%;
+    }   
+
+    .info.N {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .info.O {
+        background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        margin-bottom: 3px;
+    }
+    .but_link {
+        padding: 5px 0 5px 0;
+        font-size: 14px;
+        font-family: "roboto_bold";
+        background: #2E5367;
+        width: 150px;
+        border: 1px solid rgb(0,82,158);
+        margin-left: 10%;
+    }
+   
+    .but_link p {
+        margin: 0;
+        text-align: center;
+        /*color: #fed500;*/
+        color: #FFFFFF;
+        
+    }
+    .but_link a {
+        color: #FFFFFF;
+    }
+</style>
+

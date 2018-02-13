@@ -1,0 +1,46 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		{{#image}}
+			<img src="{{image}}" class="img-responsive" style="margin-top:5%;" />
+		{{/image}}
+		
+
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> ID réseau :</span> {{id_reseau}}<br/>
+			<span style="font-family:'roboto_bold'"> Support :</span> {{support}}<br/>	
+			<span style="font-family:'roboto_bold'"> Sites :</span> {{sites}}<br/>	
+			<span style="font-family:'roboto_bold'"> Prises :</span> {{prises}}<br/>	
+			<span style="font-family:'roboto_bold'"> Fibres :</span> {{fibres}}<br/>	
+			<span style="font-family:'roboto_bold'"> Fibres p2p :</span> {{fibres_p2p}}<br/>	
+			<span style="font-family:'roboto_bold'"> Fibres pon :</span> {{fibres_pon}}<br/>	
+			<span style="font-family:'roboto_bold'"> Fibres res :</span> {{fibres_res}}<br/>		
+			<span style="font-family:'roboto_bold'"> Cables :</span> {{cables}}<br/>
+			<span style="font-family:'roboto_bold'"> Longueur :</span> {{longueur}}<br/>	
+			<span style="font-family:'roboto_bold'"> Cout :</span> {{cout}}<br/>		
+       </p>
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #000000;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #000000;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}	
+</style>
+
